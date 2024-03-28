@@ -1,0 +1,80 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  flex-wrap: nowrap;
+}
+
+.small {
+  background-color: #fbbf24;
+  height: 100px;
+  width: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.medium {
+  background-color: #38bdf8;
+  height: 150px;
+  width: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+ 
+}
+
+.large {
+  background-color: #ec4899;
+  height: 250px;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bg-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .small {
+  margin: 0 15px; 
+}
+
+.medium {
+  margin: 0 15px; 
+ 
+}
+
+.large {
+  margin: 0 15px;
+}
+}
